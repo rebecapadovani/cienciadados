@@ -52,6 +52,7 @@ Dataset | Endereço na Web | Resumo descritivo
 > Em seguida, os autores apresentaram uma visão geral das propriedades topológicas globais da rede kino-phosphatome por meio dos valores mínimo, máximo e médio de todas as centralidades computadas juntamente com o diâmetro e a distância média da rede. Assim como os autores, essa etapa também foi realizada utilizando CentiScaPe. Os resultados obtidos dessa estapa apresentados no artigo de referência e da reprodução podem ser visualizados nas Tabela 1 e 2.
 
 >![Isso é uma imagem](assets/tabela1.png)
+
 >Tabela 1 - Resultados dos parâmetros de centralidades globais da rede kino-phosphatome calculados usando CentiScaPe: valor médio, mínimo e máximo para cada centralidade computada. Comparação dos resultados apresentados no artigo de referência e na reprodução.
 
 > |  | Distância média | Diâmetro|
