@@ -8,7 +8,7 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 
 
 # Referência bibliográfica do artigo lido
-> Giovanni Scardoni, Michele Petterlini, Carlo Laudanna, Analyzing biologic network parameters with CentiScaPe, Bioinformatics , Volume 25, Issue 21, 1 November 2009, Pages 2857–2859, https://doi.org/10.1093/bioinformatics/btp517.
+> G. Scardoni, M. Petterlini, & C. Laudanna, "Analyzing biological network parameters with CentiScaPe." Bioinformatics 25(21), 2857–2859 (2009) https://doi.org/10.1093/bioinformatics/btp517.
 
 # Resumo
 > O artigo tem como objetivo mostrar como a ferramenta CentiScape é versátil e fácil de utilizar em bioinformática quando a análise de rede é baseada em centralidade, tanto para realização de cálculos e plot de resultados quanto para análise das saídas obtidas. Os autores demonstram a partir de experimentos realizados com dados de kino-phosphatome humano, que são um compilado de bancos de dados públicos (HPRD, BIND, DIP, IntAct, MINT e BioGRID). O artigo contém os resultados dos cáluclos de várias centralidades de rede, como Distância Média, Diâmetro, Grau, Tensão, Intermediação, Radialidade, Proximidade, Valor Centroide e Excentricidade, e análises biológicas provenientes dos resultados gerados.
@@ -42,7 +42,7 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 ## Dados usados como entrada
 Dataset | Endereço na Web | Resumo descritivo
 ----- | ----- | -----
-Título do Dataset | http://base1.org/ | Breve resumo (duas ou três linhas) sobre o dataset.
+ GLOBAL-HGNC | https://academic.oup.com/bioinformatics/article/25/21/2857/227713#supplementary-data | Uma rede bipartida de proteínas quinases humanas conhecidas e as fosfatases com as quais elas interagem. É um compilado de conjuntos de dados públicos (HPRD, BIND, DIP, IntAct, MINT e BioGRID) de interatividade de proteínas humanas. O tipo de aresta é Vinculativo e os nós são Proteínas quinases e fosfatases (bipartido, não direcionado, não ponderado).
 
 # Método
 > Método usado para a análise -- adaptações feitas, ferramentas utilizadas, abordagens de análise adotadas e respectivos algoritmos.
