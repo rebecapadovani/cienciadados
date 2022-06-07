@@ -59,7 +59,6 @@ Dataset | Endereço na Web | Resumo descritivo
 > |--|--|--|
 > | Artigo de referência  | 3,03  | 8,00|
 > | Reprodução  | 3,03  | 8,00|
-
 >Tabela 2 - Resultados dos parâmetros de centralidades globais da rede kino-phosphatome calculados usando CentiScaPe: Distância Média e Diâmetro. Comparação dos resultados apresentados no artigo de referência e na reprodução.
 
 >Os autores destacaram que o cálculo das centralidades da rede permitiu uma primeira classificação das quinases e fosfatases humanas de acordo com seu papel central na rede.
