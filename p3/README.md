@@ -47,9 +47,54 @@ Dataset | Endereço na Web | Resumo descritivo
 # Método e Resultados
 > Para a reprodução dos resultados obtidos pelos autores, assim como apresentado no artigo, também foi utilizado o plug-in CentiScaPe (v. 2.2)juntamente com o CytoScape (v. 3.9.1). O plug-in calcula vários parâmetros de centralidade da rede e permite que o usuário analise as relações existentes entre os dados experimentais fornecidos e os valores de centralidade do nó calculados. Como o artigo apresenta claramente as etapas realizadas, a abordagem da reprodução dos experimentos foi realizada de forma a não alterar os parâmetros utilizados pelos autores e tentar encontrar, nas saídas, os mesmos resultados apresentados no artigo de referência. 
 
-Como mencionado, a partir da base de dados global fornecida pelos autores, foi extraída uma sub-rede consistindo apenas de interações conhecidas entre proteínas quinases humanas e fosfatases. A sub-rede resultante, chamada de *rede kino-phosphatome*, consiste em 543 nós e 3776 interações únicas (pelos autores foram encontrados 549 nós e 3844 interações únicas). Para realizar essa etapa foi utilizado um arquivo, obtido nos materiais suplementares dos autores, que contém as interações entre os nomes dessas proteínas. Para realizar a extração automática dessas interações presentes na rede global, e como os autores não mencionaram como foi realizada essa extração, nesta reprodução foi desenvolvido um código em linguagem Python (Jupyter Notebook) para realizar essa tarefa. 
+> Como mencionado, a partir da base de dados global fornecida pelos autores, foi extraída uma sub-rede consistindo apenas de interações conhecidas entre proteínas quinases humanas e fosfatases. A sub-rede resultante, chamada de *rede kino-phosphatome*, consiste em 543 nós e 3776 interações únicas (pelos autores foram encontrados 549 nós e 3844 interações únicas). Para realizar essa etapa foi utilizado um arquivo, obtido nos materiais suplementares dos autores, que contém as interações entre os nomes dessas proteínas. Para realizar a extração automática dessas interações presentes na rede global, e como os autores não mencionaram como foi realizada essa extração, nesta reprodução foi desenvolvido um código em linguagem Python (Jupyter Notebook) para realizar essa tarefa. 
 
-Em seguida, os autores apresentaram uma visão geral das propriedades topológicas globais da rede kino-phosphatome por meio dos valores mínimo, máximo e médio de todas as centralidades computadas juntamente com o diâmetro e a distância média da rede. Assim como os autores, essa etapa também foi realizada utilizando CentiScaPe. Os resultados obtidos dessa estapa apresentados no artigo de referência e da reprodução podem ser visualizados na Tabela abaixo.
+> Em seguida, os autores apresentaram uma visão geral das propriedades topológicas globais da rede kino-phosphatome por meio dos valores mínimo, máximo e médio de todas as centralidades computadas juntamente com o diâmetro e a distância média da rede. Assim como os autores, essa etapa também foi realizada utilizando CentiScaPe. Os resultados obtidos dessa estapa apresentados no artigo de referência e da reprodução podem ser visualizados nas Tabela 1 e 2.
+
+>![Isso é uma imagem](assets/tabela1.png)
+>Tabela 1 - Resultados dos parâmetros de centralidades globais da rede kino-phosphatome calculados usando CentiScaPe: valor médio, mínimo e máximo para cada centralidade computada. Comparação dos resultados apresentados no artigo de referência e na reprodução.
+
+> |  | Distância média | Diâmetro|
+> |--|--|--|
+> | Artigo de referência  | 3,03  | 8,00|
+> | Reprodução  | 3,03  | 8,00|
+
+>Tabela 2 - Resultados dos parâmetros de centralidades globais da rede kino-phosphatome calculados usando CentiScaPe: Distância Média e Diâmetro. Comparação dos resultados apresentados no artigo de referência e na reprodução.
+
+>Os autores destacaram que o cálculo das centralidades da rede permitiu uma primeira classificação das quinases e fosfatases humanas de acordo com seu papel central na rede.
+
+> Os valores de centralidade nó a nó também foram gerados. Alguns dos resultados obtidos podem ser visualizados nas tabelas abaixo. Os demais resultados deste experimento podem ser encontrados nos materiais suplementares. Seguem alguns resultados obtidos pelos autores e na reprodução, respectivamente.
+
+>![Isso é uma imagem](assets/tabela4.png)
+> Tabela 3 - Alguns valores de centralidade nó a nó da rede kino-phosphatome obtidos no artigo.
+
+>![Isso é uma imagem](assets/tabela3.png)
+> Tabela 4 - Alguns valores de centralidade nó a nó rede kino-phosphatome obtidos na reprodução.
+
+> A fim de indentificar os nós com maiores pontuações, os autores plotaram um gráfico grau x grau com o recurso 'plot by centrality' do CentiScaPe. O resultado gerado na reprodução desta etapa pode ser observado na figura abaixo. Os autores apontam que, como esperado, o gráfico resulta em uma distribuição linear e é notável que a distribuição não é uniforme já que muitos nós apresentam baixo grau e apenas alguns nós possuem alto grau.
+
+>![Isso é uma imagem](assets/degree-figs3.jpg)
+> Figura 1 - Gráfico de dispersão grau sobre grau obtido na reprodução. Cada ponto representa um nome de proteína.
+
+> O próximo experimento reproduzido consistem em utilizar o Network Analyzer para calcular a quantidade de nós com grau acima da média, ou seja *degree >= 13*. Um total de 89 nós apresentou um grau acima da média na reprodução e o histograma pode ser visualizado abaixo. Os autores chegaram no resultado de 186 nós com grau acima da média.
+
+>![Isso é uma imagem](assets/degree-acimamedia.png)
+> Figura 2 - Histograma de grau x quantidade de nós, destacando nós que possuem grau acima da média gerado durante a reprodução.
+
+> Ao analisar os resultados obtidos nas etapas anteriores, os autores destacam que a proteína quinase MAPK1 apresenta valores de centralidades elevados para a maioria das centralidades computadas sugerindo seu papel central regulador na estrutura e função da rede. O mesmo pode ser notado nos experimentos reproduzidos, e por isso, o próximo resultado gerado pelos autores e reproduzido consiste na representação 'plot by node' para MAPK1. 
+
+>![Isso é uma imagem](assets/plot-by-node.png)
+> Figura 3 - 'plot by node' para MAPK1 obtido na reprodução. Para cada centralidade é mostrado o valor do nó específico (vermelho), o valor médio (azul), o valor mínimo (verde) e o valor máximo (branco).
+
+> Entre as fosfatases, PTPN1 teve o grau mais alto, e pontuação alta também para outras centralidades. Assim, a análise de grau sugere que MAPK1 e PTPN1 são as quinases e fosfatases mais centrais, respectivamente. O resultado de 'plot by node' para PTPN1 reproduzido pode ser observado abaixo. 
+
+>![Isso é uma imagem](assets/ptpn1.png)
+> Figura 4 - 'plot by node' para PTPN1 obtido na reprodução. Para cada centralidade é mostrado o valor do nó específico (vermelho), o valor médio (azul), o valor mínimo (verde) e o valor máximo (branco).
+
+> Em um outro experimento, os autores plotaram centroide x centroide que forneceu uma distribuição linear e quanto ao grau, a distribuição também não foi uniforme pois muitos nós apresentam centroide baixo enquanto apenas alguns nós têm centroide alto. Esse experimento foi realizado para apoiar mais as conclusões obtidas sobre as proteínas MAPK1 e PTPN1. O resultado do gráfico reproduzido deste experimento é apresentado a seguir. 
+
+>![Isso é uma imagem](assets/centroid.jpg)
+> Figura 5 - Gráfico de dispersão do centroide sobre centroide obtido na reprodução. Cada ponto representa um nome de proteína.
 
 
 
