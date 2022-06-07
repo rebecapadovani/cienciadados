@@ -52,6 +52,7 @@ Dataset | Endereço na Web | Resumo descritivo
 > Em seguida, os autores apresentaram uma visão geral das propriedades topológicas globais da rede kino-phosphatome por meio dos valores mínimo, máximo e médio de todas as centralidades computadas juntamente com o diâmetro e a distância média da rede. Assim como os autores, essa etapa também foi realizada utilizando CentiScaPe. Os resultados obtidos dessa etapa apresentados no artigo de referência e da reprodução podem ser visualizados nas Tabela 1 e 2.
 
 > ![Isso é uma imagem](assets/tabela1.png)
+
 > Tabela 1 - Resultados dos parâmetros de centralidades globais da rede kino-phosphatome calculados usando CentiScaPe: valor médio, mínimo e máximo para cada centralidade computada. Comparação dos resultados apresentados no artigo de referência e na reprodução.
 
 > |  | Distância média | Diâmetro|
@@ -59,30 +60,30 @@ Dataset | Endereço na Web | Resumo descritivo
 > | Artigo de referência  | 3,03  | 8,00|
 > | Reprodução  | 3,03  | 8,00|
 
->Tabela 2 - Resultados dos parâmetros de centralidades globais da rede kino-phosphatome calculados usando CentiScaPe: distância média e diâmetro. Comparação dos resultados apresentados no artigo de referência e na reprodução.
+> Tabela 2 - Resultados dos parâmetros de centralidades globais da rede kino-phosphatome calculados usando CentiScaPe: distância média e diâmetro. Comparação dos resultados apresentados no artigo de referência e na reprodução.
 
 > Os autores destacaram que o cálculo das centralidades da rede permitiu uma primeira classificação das quinases e fosfatases humanas de acordo com seu papel central na rede.
 
 > Os valores de centralidade nó a nó também foram gerados. Alguns dos resultados obtidos podem ser visualizados nas tabelas abaixo. Os demais resultados deste experimento podem ser encontrados nos materiais suplementares. Seguem alguns resultados obtidos pelos autores e na reprodução, respectivamente.
 
->![Isso é uma imagem](assets/tabela4.png)
+> ![Isso é uma imagem](assets/tabela4.png)
 > Tabela 3 - Alguns valores de centralidade nó a nó da rede kino-phosphatome obtidos no artigo.
 
 >![Isso é uma imagem](assets/tabela3.png)
 > Tabela 4 - Alguns valores de centralidade nó a nó rede kino-phosphatome obtidos na reprodução.
 
-> A fim de indentificar os nós com maiores pontuações, os autores plotaram um gráfico grau x grau com o recurso 'plot by centrality' do CentiScaPe. O resultado gerado na reprodução desta etapa pode ser observado na figura abaixo. Os autores apontam que, como esperado, o gráfico resulta em uma distribuição linear e é notável que a distribuição não é uniforme já que muitos nós apresentam baixo grau e apenas alguns nós possuem alto grau.
+> A fim de indentificar os nós com maiores pontuações, os autores plotaram um gráfico grau x grau com o recurso 'plot by centrality' do CentiScaPe. O resultado gerado na reprodução desta etapa pode ser observado na figura abaixo. Os autores apontam que, como esperado, o gráfico resulta em uma distribuição linear e é notável que a distribuição não é uniforme, já que muitos nós apresentam baixo grau e apenas alguns nós possuem alto grau.
 
 >![Isso é uma imagem](assets/degree-figs3.jpg)
 > Figura 1 - Gráfico de dispersão grau sobre grau obtido na reprodução. Cada ponto representa um nome de proteína.
 
-> O próximo experimento reproduzido consistem em utilizar o Network Analyzer para calcular a quantidade de nós com grau acima da média, ou seja *degree >= 13*. Um total de 89 nós apresentou um grau acima da média na reprodução e o histograma pode ser visualizado abaixo. Os autores chegaram no resultado de 186 nós com grau acima da média.
+> O próximo experimento reproduzido consiste em utilizar o Network Analyzer para calcular a quantidade de nós com grau acima da média, ou seja *degree >= 13*. Um total de 89 nós apresentou grau acima da média na reprodução e o histograma pode ser visualizado abaixo. Os autores chegaram no resultado de 186 nós com grau acima da média.
 
 >![Isso é uma imagem](assets/degree-acimamedia.png)
 
-> Figura 2 - Histograma de grau x quantidade de nós, destacando nós que possuem grau acima da média gerado durante a reprodução.
+> Figura 2 - Histograma de grau x quantidade de nós, destacando nós que possuem grau acima da média, gerado durante a reprodução.
 
-> Ao analisar os resultados obtidos nas etapas anteriores, os autores destacam que a proteína quinase MAPK1 apresenta valores de centralidades elevados para a maioria das centralidades computadas sugerindo seu papel central regulador na estrutura e função da rede. O mesmo pode ser notado nos experimentos reproduzidos, e por isso, o próximo resultado gerado pelos autores e reproduzido consiste na representação 'plot by node' para MAPK1. 
+> Ao analisar os resultados obtidos nas etapas anteriores, os autores destacam que a proteína quinase MAPK1 apresenta valores de centralidades elevados para a maioria das centralidades computadas, sugerindo seu papel central regulador na estrutura e função da rede. O mesmo pode ser notado nos experimentos reproduzidos, e por isso, o próximo resultado gerado pelos autores e reproduzido consiste na representação 'plot by node' para MAPK1. 
 
 >![Isso é uma imagem](assets/plot-by-node.png)
 > Figura 3 - 'plot by node' para MAPK1 obtido na reprodução. Para cada centralidade é mostrado o valor do nó específico (vermelho), o valor médio (azul), o valor mínimo (verde) e o valor máximo (branco).
@@ -92,12 +93,12 @@ Dataset | Endereço na Web | Resumo descritivo
 >![Isso é uma imagem](assets/ptpn1.png)
 > Figura 4 - 'plot by node' para PTPN1 obtido na reprodução. Para cada centralidade é mostrado o valor do nó específico (vermelho), o valor médio (azul), o valor mínimo (verde) e o valor máximo (branco).
 
-> Em um outro experimento, os autores plotaram centroide x centroide que forneceu uma distribuição linear e quanto ao grau, a distribuição também não foi uniforme pois muitos nós apresentam centroide baixo enquanto apenas alguns nós têm centroide alto. Esse experimento foi realizado para apoiar mais as conclusões obtidas sobre as proteínas MAPK1 e PTPN1. O resultado do gráfico reproduzido deste experimento é apresentado a seguir. 
+> Em um outro experimento, os autores plotaram centroide x centroide que forneceu uma distribuição linear e quanto ao grau, a distribuição também não foi uniforme pois, muitos nós apresentam centroide baixo enquanto apenas alguns nós têm centroide alto. Esse experimento foi realizado para apoiar as conclusões obtidas sobre as proteínas MAPK1 e PTPN1. O resultado do gráfico reproduzido deste experimento é apresentado a seguir. 
 
 >![Isso é uma imagem](assets/centroid.jpg)
 > Figura 5 - Gráfico de dispersão do centroide sobre centroide obtido na reprodução. Cada ponto representa um nome de proteína.
 
-> Antes de apresentar os resultados do próximo experimento, é destacado pelos autores que o centroide médio foi -393 (aproximadamente -389 na reprodução). Com MAPK1 apresentando o maior valor de centroide 18 (17 na reprodução) e PTPN1 teve o maior valor de centroide, -154 (o mesmo na reprodução), entre todas as fosfatases. Quanto ao grau, também a análise do valor do centróide sugere uma distribuição livre de escala, sendo MAPK1 e PTPN1 as quinases e fosfatases mais centrais, respectivamente. Para evidenciar essa sugestão, os autores analisam o gráfico de grau x centroide, que foi reproduzido e pode ser analisado abaixo. É possível observar a distribuição não linear de nós, com poucos nós dispersos ocupando o quadrante superior direito do gráfico (alto grau e alto centroide). E os autores aindam chamam a atenção para esses nós, que podem representar quinases e fosfatases regulatórias particularmente importantes para a rede. O gráfico foi plotado utilizando o recurso 'plot by centralities' do CentiScape. Os valores das centralidades e o identificador do nó aparecem no CentiScaPe passando o mouse sobre cada forma geométrica do gráfico (isso é válido para todos os plots realizados).
+> Antes de apresentar os resultados do próximo experimento, é destacado pelos autores que o centroide médio foi -393 (aproximadamente -389 na reprodução). Com MAPK1 apresentando o maior valor de centroide 18 (17 na reprodução) e PTPN1 teve o maior valor de centroide, -154 (o mesmo na reprodução), entre todas as fosfatases. Quanto ao grau, também a análise do valor do centroide sugere uma distribuição livre de escala, sendo MAPK1 e PTPN1 as quinases e fosfatases mais centrais, respectivamente. Para evidenciar essa sugestão, os autores analisam o gráfico de grau x centroide, que foi reproduzido e pode ser analisado abaixo. É possível observar a distribuição não linear de nós, com poucos nós dispersos ocupando o quadrante superior direito do gráfico (alto grau e alto centroide). E os autores aindam chamam a atenção para esses nós, que podem representar quinases e fosfatases regulatórias particularmente importantes para a rede. O gráfico foi plotado utilizando o recurso 'plot by centralities' do CentiScape. Os valores das centralidades e o identificador do nó aparecem no CentiScaPe passando o mouse sobre cada forma geométrica do gráfico (isso é válido para todos os plots realizados).
 
 >![Isso é uma imagem](assets/DEGREE-CENTROID.jpg)
 > Figura 6 - 'plot por centralidades' do grau sobre o centroide obtido na reprodução. No canto superior direito do gráfico aparecem os nós com valores altos de grau e centroide. 
@@ -113,8 +114,8 @@ Dataset | Endereço na Web | Resumo descritivo
 
 > Figura 8 - Sub-rede resultante da extração de todos os nós com todas as centralidades sobre a média obtida na reprodução.
 
-> Os demais experimentos realizados envolveram outras bases de dados não disponibiizadas pelos autores e não encontradas publicamente.
+> Os demais experimentos realizados pelos autores envolveram outras bases de dados não disponibiizadas com o artigo e não encontradas publicamente.
 
-> Ao comparar os resultados obtidos entre o artigo e a reprodução, nota-se que não houve muita diferença de valores. A filtragem da base de dados global realizada na reprodução não apresentou a mesma quantidade de nós (543) e interações (3776) que os autores (549 nós e 3844 interações) e isso afetou os cálculos realizados posteriormente. A segunda extração reproduzida apresentou maiores diferenças (99 nós e 3776 interações) em relação à extração realizada com o CentiScape pelos autores (97 nós e 962 interações).
+> Ao comparar os resultados obtidos entre o artigo e a reprodução, nota-se que não há muita diferença de valores. A filtragem da base de dados global realizada na reprodução não apresentou a mesma quantidade de nós (543) e interações (3776) que os autores (549 nós e 3844 interações) e isso afetou os cálculos realizados posteriormente. A segunda extração reproduzida apresentou maiores diferenças (99 nós e 3776 interações) em relação à extração realizada com o CentiScape pelos autores (97 nós e 962 interações).
 
-> E por fim, pode-se concluir o mesmo que os autores. O CentiScaPe é uma ferramenta de bioinformática versátil e fácil de utilizar de forma integrada ao CytoScape. Os resultados apresentados com o painel de resultados, as opções 'plot by node' e 'plot by centrality' facilitam a visualização e a análise de redes complexas derivadas de dados experimentais, mais especificamente de dados biológicos.
+> E por fim, pode-se concluir o mesmo que os autores: o CentiScaPe é uma ferramenta de bioinformática versátil e fácil de utilizar de forma integrada ao CytoScape. Os resultados apresentados com o painel de resultados, as opções 'plot by node' e 'plot by centrality' facilitam a visualização e a análise de redes complexas derivadas de dados experimentais, mais especificamente de dados biológicos.
