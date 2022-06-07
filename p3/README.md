@@ -18,7 +18,7 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 
 > Por meio dessa entrada foram calculados os valores mínimo, máximo e médio de todas as centralidades computadas juntamente com o diâmetro e a distância média da rede para se ter uma visão geral das propriedades topológicas globais da rede kino-phosphatome. As centralidades computadas estão descritas a seguir:
 
-1. Grau, ou *degree*, que permite uma avaliação imediata da relevância do nó. Proteínas com grau muito alto estão interagindo com várias outras proteínas.
+> 1. Grau, ou *degree*, que permite uma avaliação imediata da relevância do nó. Proteínas com grau muito alto estão interagindo com várias outras proteínas.
 2. Diâmetro, ou *diameter*, é a compacidade de uma rede biológica, pode ser interpretado como a facilidade de comunicação entre as proteínas;
 3. Distância média, ou *distance average*, também representa a compacidade de uma rede biológica, embora os índices de centralidade devam ser calculados para apoiar essa indicação.
 4. Excentricidade, ou *eccentricity*, pode ser interpretada como a facilidade de uma proteína ser alcançada por todas as outras proteínas da rede;
@@ -30,7 +30,7 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 
 > As outras reproduções realizadas estão listadas a seguir:
 
-1. Cálculo de centralidades de cada nó;
+> 1. Cálculo de centralidades de cada nó;
 2. 'plot by centrality', plotando grau sobre grau;
 3. plot para análise de quantidade de nós com graus acima da média;
 4. plot das centralidades da proteína quinase MAPK1;
