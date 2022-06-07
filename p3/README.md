@@ -96,12 +96,22 @@ Dataset | Endereço na Web | Resumo descritivo
 >![Isso é uma imagem](assets/centroid.jpg)
 > Figura 5 - Gráfico de dispersão do centroide sobre centroide obtido na reprodução. Cada ponto representa um nome de proteína.
 
+> Antes de apresentar os resultados do próximo experimento, é destacado pelos autores que o centroide médio foi -393 (aproximadamente -389 na reprodução). Com MAPK1 apresentando o maior valor de centroide 18 (17 na reprodução) e PTPN1 teve o maior valor de centroide, -154 (o mesmo na reprodução), entre todas as fosfatases. Quanto ao grau, também a análise do valor do centróide sugere uma distribuição livre de escala, sendo MAPK1 e PTPN1 as quinases e fosfatases mais centrais, respectivamente. Para evidenciar essa sugestão, os autores analisam o gráfico de grau x centroide, que foi reproduzido e pode ser analisado abaixo. É possível observar a distribuição não linear de nós, com poucos nós dispersos ocupando o quadrante superior direito do gráfico (alto grau e alto centroide). E os autores aindam chamam a atenção para esses nós, que podem representar quinases e fosfatases regulatórias particularmente importantes para a rede. O gráfico foi plotado utilizando o recurso 'plot by centralities' do CentiScape. Os valores das centralidades e o identificador do nó aparecem no CentiScaPe passando o mouse sobre cada forma geométrica do gráfico (isso é válido para todos os plots realizados).
+
+>![Isso é uma imagem](assets/DEGREE-CENTROID.jpg)
+> Figura 6 - 'plot por centralidades' do grau sobre o centroide obtido na reprodução. No canto superior direito do gráfico aparecem os nós com valores altos de grau e centroide. 
+
+> O último experimento reproduzido foi extrair os nós mais relevantes desta sub-rede, os autores utilizaram o CentiScaPe para selecionar todos os nós com todos os valores de centralidade acima da média. Na reprodução foi utilizada a ferramenta de filtro padrão disponível no CytoScape. Após a filtragem, os autores obtiveram uma sub-rede kino-phosphatome composta por 97 nós e 962 interações. Na reprodução, o resultado foi de 99 nós e 3776 interações. Segundo os autores, esta sub-rede possivelmente representa um grupo de quinases e fosfatases altamente interativas que apresentam um papel crítico na regulação da fosforilação de proteínas em células humanas. As filtragens dos autores e da reprodução podem ser visualizadas e comparadas por meio das Figuras 7 e 8, respectivamente.
 
 
-> Método usado para a análise -- adaptações feitas, ferramentas utilizadas, abordagens de análise adotadas e respectivos algoritmos.
-> Etapas do processo reproduzido.
+>![Isso é uma imagem](assets/rede-autores.png)
+> Figura 7 - Sub-rede resultante da extração de todos os nós com todas as centralidades sobre a média obtida no artigo.
 
-# Resultados
-> Apresente os resultados obtidos pela sua adaptação.
-> Confronte os seus resultados com aqueles do artigo.
-> Esta seção opcionalmente pode ser apresentada em conjunto com o método.
+>![Isso é uma imagem](assets/Sheet1.png)
+> Figura 8 - Sub-rede resultante da extração de todos os nós com todas as centralidades sobre a média obtida na reprodução.
+
+> Os demais experimentos realizados envolveram outras bases de dados não disponibiizadas pelos autores e não encontradas publicamente.
+
+> Ao comparar os resultados obtidos entre o artigo e a reprodução, nota-se que não houve muita diferença de valores. A filtragem da base de dados global realizada na reprodução não apresentou a mesma quantidade de nós (543) e interações (3776) que os autores (549 nós e 3844 interações) e isso afetou os cálculos realizados posteriormente. A segunda extração reproduzida apresentou maiores diferenças (99 nós e 3776 interações) em relação à extração realizada com o CentiScape pelos autores (97 nós e 962 interações).
+
+> E por fim, pode-se concluir o mesmo que os autores. O CentiScaPe é uma ferramenta de bioinformática versátil e fácil de utilizar de forma integrada ao CytoScape. Os resultados apresentados com o painel de resultados, as opções 'plot by node' e 'plot by centrality' facilitam a visualização e a análise de redes complexas derivadas de dados experimentais, mais especificamente de dados biológicos.
