@@ -59,6 +59,7 @@ Dataset | Endereço na Web | Resumo descritivo
 > |--|--|--|
 > | Artigo de referência  | 3,03  | 8,00|
 > | Reprodução  | 3,03  | 8,00|
+
 >Tabela 2 - Resultados dos parâmetros de centralidades globais da rede kino-phosphatome calculados usando CentiScaPe: Distância Média e Diâmetro. Comparação dos resultados apresentados no artigo de referência e na reprodução.
 
 >Os autores destacaram que o cálculo das centralidades da rede permitiu uma primeira classificação das quinases e fosfatases humanas de acordo com seu papel central na rede.
@@ -79,6 +80,7 @@ Dataset | Endereço na Web | Resumo descritivo
 > O próximo experimento reproduzido consistem em utilizar o Network Analyzer para calcular a quantidade de nós com grau acima da média, ou seja *degree >= 13*. Um total de 89 nós apresentou um grau acima da média na reprodução e o histograma pode ser visualizado abaixo. Os autores chegaram no resultado de 186 nós com grau acima da média.
 
 >![Isso é uma imagem](assets/degree-acimamedia.png)
+
 > Figura 2 - Histograma de grau x quantidade de nós, destacando nós que possuem grau acima da média gerado durante a reprodução.
 
 > Ao analisar os resultados obtidos nas etapas anteriores, os autores destacam que a proteína quinase MAPK1 apresenta valores de centralidades elevados para a maioria das centralidades computadas sugerindo seu papel central regulador na estrutura e função da rede. O mesmo pode ser notado nos experimentos reproduzidos, e por isso, o próximo resultado gerado pelos autores e reproduzido consiste na representação 'plot by node' para MAPK1. 
@@ -105,9 +107,11 @@ Dataset | Endereço na Web | Resumo descritivo
 
 
 >![Isso é uma imagem](assets/rede-autores.png)
+
 > Figura 7 - Sub-rede resultante da extração de todos os nós com todas as centralidades sobre a média obtida no artigo.
 
 >![Isso é uma imagem](assets/Sheet1.png)
+
 > Figura 8 - Sub-rede resultante da extração de todos os nós com todas as centralidades sobre a média obtida na reprodução.
 
 > Os demais experimentos realizados envolveram outras bases de dados não disponibiizadas pelos autores e não encontradas publicamente.
