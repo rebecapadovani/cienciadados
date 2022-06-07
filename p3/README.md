@@ -18,15 +18,16 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 
 Por meio dessa entrada foram calculados os valores mínimo, máximo e médio de todas as centralidades computadas juntamente com o diâmetro e a distância média da rede para se ter uma visão geral das propriedades topológicas globais da rede kino-phosphatome. As centralidades computadas são:
 
-1.
-2.
-3.
-4.
-5.
-6.
-7.
-8.
-9.
+1. Grau, ou *degree*, que permite uma avaliação imediata da relevância do nó. Proteínas com grau muito alto estão interagindo com várias outras proteínas.
+2. Diâmetro, ou *diameter*, é a compacidade de uma rede biológica, pode ser interpretado como a facilidade de comunicação entre as proteínas;
+3. Distância média, ou *distance average*, também representa a compacidade de uma rede biológica, embora os índices de centralidade devam ser calculados para apoiar essa indicação.
+4. Excentricidade, ou *eccentricity *, pode ser interpretada como a facilidade de uma proteína ser alcançada por todas as outras proteínas da rede;
+5. Proximidade, ou *closeness*, é probabilidade de uma proteína ser relevante para várias outras proteínas, mas com a possibilidade de ser irrelevante para algumas outras proteínas. Ou seja, uma proteína com alta proximidade, comparada à média de proximidade da rede, será facilmente central para outras proteínas;
+6. Radialidade, ou *radiality*, também pode ser interpretada como a probabilidade de uma proteína ser relevante para várias outras proteínas, mas com a possibilidade de ser irrelevante para algumas outras proteínas;
+7. Centralidade, ou *centrality*, sigifica a probabilidade de uma proteína ser capaz de organizar agrupamentos de proteínas. Uma proteína com alto valor de centroide, possivelmente estará envolvida na coordenação da atividade de outras proteínas altamente conectadas;
+8. Estresse, ou *stress*, pode indicar a relevância de uma proteína como capaz de manter nós comunicantes juntos;
+9. Intermediação, ou *Betweenness*, indica a capacidade de uma proteína de trazer em comunicação proteínas distantes.
+
 As outras reproduções realizadas são listadas a seguir:
 
 1. Cálculo de centralidades de cada nó;
