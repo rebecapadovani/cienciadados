@@ -35,7 +35,7 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 > As transformações para gerar novos dados foram realizadas de forma aleatória.
 > Algumas imagens geradas com *data augmentation* no conjunto de treinamento podem ser observadas na Figura 1.
 
-> ![Figura 1](assets/data-augementation.png)
+> ![Figura 1](assets/data-augmentation.png)
 > Figura 1 - Algumas imagens geradas com *data augmentation* por meio do conjunto de treinamento.
 
 # Metodologia
