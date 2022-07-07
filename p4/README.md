@@ -15,22 +15,22 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 > A etiologia da lesão é importante para o tratamento adequado e um método que distingue lesões desmielinizantes de isquêmicas e pode ser usado para caracterizar lesões de etiologia desconhecida. As estiologias são isquêmica e desmielinizante e as lesões da substância branca apresentam-se brilhante em T2w e FLAIR (hiperintensidades de substância branca).
 
 ## Ferramentas
-* Linguagem de programação Python;
-* Jupyter Notebook;
-* Google Colaboratory.
+> * Linguagem de programação Python;
+> * Jupyter Notebook;
+> * Google Colaboratory.
 
 ## Preparo e uso dos dados
-Os dados utilizados correspondem aos dados separados para a tarefa de Deep Learning ("Data_P4_DL"). Não foram utilizadas as máscaras para nenhum tipo de processo neste trabalho.
+> Os dados utilizados correspondem aos dados separados para a tarefa de Deep Learning ("Data_P4_DL"). Não foram utilizadas as máscaras para nenhum tipo de processo neste trabalho.
 
-* Todas as imagens foram redimensionadas para 170x170.
-* **Data augmentation**: foi aplicada a técnica de **data augmentation** nas imagens dos conjuntos de treinamento e validação. As transformações realizadas com **data augmentation** incluem:
-1. Flip horizontal: as inversões de imagem são realizadas ao longo de um eixo de simetria. Para aprimoramento de imagens médicas, elas podem ser realizadas tanto na vertical quanto na horizontal;
-2. Flip Vertical;
-3. Rotação em 45 graus;
-4. Rotação em 90 graus;
-5. Brilho variando entre 0.5 e 1.2: quanto menor o valor, mais escura é a imagem;
-6. Contraste variando entre 0.8 e 1.2: quando o contraste é aumentado, o número de pixels brancos e pretos na imagem também aumenta;
-7. Afiação (ou **sharpening**), com fator 2: transformação que aumenta o contraste nas bordas da imagem, dando uma aparência mais nítida.
+> * Todas as imagens foram redimensionadas para 170x170.
+> * **Data augmentation**: foi aplicada a técnica de **data augmentation** nas imagens dos conjuntos de treinamento e validação. As transformações realizadas com **data augmentation** incluem:
+> 1. Flip horizontal: as inversões de imagem são realizadas ao longo de um eixo de simetria. Para aprimoramento de imagens médicas, elas podem ser realizadas tanto na vertical quanto na horizontal;
+> 2. Flip Vertical;
+> 3. Rotação em 45 graus;
+>4. Rotação em 90 graus;
+>5. Brilho variando entre 0.5 e 1.2: quanto menor o valor, mais escura é a imagem;
+>6. Contraste variando entre 0.8 e 1.2: quando o contraste é aumentado, o número de pixels brancos e pretos na imagem também aumenta;
+>7. Afiação (ou **sharpening**), com fator 2: transformação que aumenta o contraste nas bordas da imagem, dando uma aparência mais nítida.
 
 > As transformações para gerar novos dados foram realizadas de forma aleatória.
 # Metodologia
