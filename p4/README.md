@@ -11,7 +11,9 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 
 
 # Introdução
-> Apresentação de forma resumida do problema (contexto) e a pergunta que se quer responder.
+> O objetivo principal do projeto é diferenciar lesões isquêmicas e desmielinizantes por meio de um classificador e, assim, identificar qual a etiologia mais provável das lesões presentes em pacientes de Lúpus Eritematoso Sistêmico (SLE).
+> A etiologia da lesão é importante para o tratamento adequado e um método que distingue lesões desmielinizantes de isquêmicas pode ser usado para caracterizar lesões de etiologia desconhecida. As estiologias são isquêmica e desmielinizante e as lesões da substância branca apresentam-se brilhante em T2w e FLAIR (hiperintensidades de substância branca).
+
 
 ## Ferramentas
 > Listagem das ferramentas utilizadas (na forma de itens).
