@@ -1,36 +1,14 @@
 # Projeto 4 – Classificação de lesões de substância branca no Lúpus
-
-O objetivo geral do projeto é, a partir de uma classificador treinado em imagens de ressonância do cérebro para diferenciar lesões isquêmicas e desmielinizantes, identificar qual a etiologia mais provável das lesões presentes em pacientes de Lúpus Eritematoso Sistêmico (LES).
-
-A equipe pode usar qualquer tipo de classificador para a tarefa, desde o SVM já treinado e entregue na Atividade 11, como outro classificador baseado ou não em DL. Os dados de teste não devem ser incorporados no treinamento do classificador.
-
-O conjunto de dados de lesões de pacientes de LES foram compartilhados pelo Google Drive (link nas instruções do P4 no Classroom).
-
-Para o processamento dos dados e treinamento do classificador, sugere-se usar notebooks (e.g., Jupyter).
-
-## Instruções para o Relatório Final
-
-Segue abaixo o modelo de como deve ser documentada a entrega.
-> Tudo o que aparece neste modo de citação, ou indicado entre `<...>`, se refere a algo que deve ser substituído pelo indicado. No modelo são colocados exemplos ilustrativos, que serão substituídos pelos do seu projeto.
-
-Se o relatório for feito em um notebook, o modelo a seguir pode ser colocado dentro do notebook diretamente. Nesse caso, coloque no markdown do projeto (fora do notebook) uma cópia dos dados até a seção de `Apresentação` e um link para o notebook com o relatório.
-
-# Modelo Relatório Final de Projeto P4
-
-# Projeto `<Título em Português>`
-# Project `<Title in English>`
+# Project 4 - Classification of white matter lesions in Lupus.
 
 # Apresentação
 
 O presente projeto foi originado no contexto das atividades da disciplina de pós-graduação [*Ciência e Visualização de Dados em Saúde*](https://ds4h.org), oferecida no primeiro semestre de 2022, na Unicamp.
 
-> Incluir nome RA e foco de especialização de cada membro do grupo. Os grupos devem ter no máximo 3 integrantes.
->
 > |Nome  | RA | Especialização|
 > |--|--|--|
-> | Nome1  | 123456  | Saúde|
-> | Nome2  | 123456  | Computação|
-> | Nome3  | 123456  | XXX|
+> | Rebeca Padovani Ederli | 201482  | Ciência da Computação|
+
 
 # Introdução
 > Apresentação de forma resumida do problema (contexto) e a pergunta que se quer responder.
