@@ -72,10 +72,13 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 
 > As métricas calculadas a partir dos resultados foram especificidade, sensibilidade, acurácia e matriz de confusão. Os testes foram realizados no conjunto de teste estabelecido e no conjunto de teste apresentado na atividade em aula para verificar como o modelo está atuando. Em seguida, foram realizadas as predições no conjunto SLE.
 
-* resultados do treinamento do classificador usando tabelas e gráficos
->
-> Justificar as escolhas.
-> Esta parte do relatório pode ser copiada da Atividade 11, caso o grupo opte por usar o SVM já treinado.
+> A Tabela 1 apresenta os resultados obtidos na predição do classificador para o conjunto de teste estabelecido (contém 78 imagens de diferentes indíviduos).
+
+> | PRedição/Real | AVC | EM |
+> |--|--|--|
+> | AVC |  33 | 0 |
+> | EM |  0  |  45 |
+ 
 
 # Resultados Obtidos e Discussão
 > Esta seção deve apresentar o resultado de predição das lesões de LES usando o classificador treinado. Também deve tentar explicar quais os atributos relevantes usados na classificação obtida
