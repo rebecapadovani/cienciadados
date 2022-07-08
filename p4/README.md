@@ -72,13 +72,22 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 
 > As métricas calculadas a partir dos resultados foram especificidade, sensibilidade, acurácia e matriz de confusão. Os testes foram realizados no conjunto de teste estabelecido e no conjunto de teste apresentado na atividade em aula para verificar como o modelo está atuando. Em seguida, foram realizadas as predições no conjunto SLE.
 
-> A Tabela 1 apresenta os resultados obtidos na predição do classificador para o conjunto de teste estabelecido (contém 78 imagens de diferentes indíviduos).
+> A Tabela 1 apresenta os resultados obtidos na predição do classificador para o conjunto de teste estabelecido (contém 78 imagens de diferentes indíviduos). A acurácia, especificidade e sensibilidade para este conjunto foram de 100%.
 
-> | PRedição/Real | AVC | EM |
+> | Predição/Real | AVC | EM |
 > |--|--|--|
 > | AVC |  33 | 0 |
 > | EM |  0  |  45 |
- 
+
+> Tabela 1 - Conjunto de teste - matriz de confusão. 
+
+> Algumas figuras com os resultado da predição podem ser visualizadas abaixo.
+
+> ![predição-em](assets/em-1.png) ![predição-avc](assets/avc-1.png)
+
+> ![predição-em](assets/em-2.png) ![predição-avc](assets/avc-2.png)
+
+
 
 # Resultados Obtidos e Discussão
 > Esta seção deve apresentar o resultado de predição das lesões de LES usando o classificador treinado. Também deve tentar explicar quais os atributos relevantes usados na classificação obtida
