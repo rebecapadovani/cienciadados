@@ -46,7 +46,7 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 
 > Os parâmetros do modelo foram adotados com base na atividade realizada em aula: *taxa de aprendizado = 0.00005* e otimizador SGD. *Cross Entropy Loss* foi utilizada para calcular a perda de entropia cruzada entre a entrada e o alvo.
 
-> O primeiro treinamento consistiu em realizar 100 épocas para visualização do efeito overfitting. Os resultados das médias (10 iterações) das acurácias obtidas ao longo das 100 épocas durante o treinamento, sob os conjuntos de treinamento e validação podem ser visualizados na Figura 2. Por meio do gráfio **acurácias do treinamento e validação x época**, é possível observar que o overfitting ocorre a partir da 40ª época.
+> O primeiro treinamento consistiu em realizar 100 épocas para visualização do efeito overfitting. Os resultados das médias (10 iterações) das acurácias obtidas ao longo das 100 épocas durante o treinamento, sob os conjuntos de treinamento e validação podem ser visualizados na Figura 2. Por meio do gráfio **acurácias do treinamento e validação x época**, é possível observar que com os dados de treinamento, o classificador atinge 95% de acurácia média mas, com o os dados de validação, a métrica não passa de 90%. Nesse sentido, é notável que o overfitting ocorre a partir da 40ª época.
 
 > ![Figura 2](assets/acc-100epocas.png)
 
@@ -68,7 +68,7 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 
 > Figura 5 - Gráfico das médias de *loss* x épocas ao longo de 40 épocas.
 
-Ao treinar o classificador por 40 épocas, o efeito de overfitting é mitigado e a função *loss* continua em queda, como pode-se observar no gráfico da Figura 5.
+> Ao treinar o classificador por 40 épocas, o efeito de overfitting é mitigado com o classificador atingindo 90% de acurácia média utilizando os dois conjuntos de dados, e a função *loss* continua em queda.
 
 > As métricas calculadas a partir dos resultados foram especificidade, sensibilidade, acurácia e matriz de confusão. Os testes foram realizados no conjunto de teste estabelecido e no conjunto de teste apresentado na atividade em aula para verificar como o modelo está atuando. Em seguida, foram realizadas as predições no conjunto SLE.
 
