@@ -46,6 +46,30 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 
 > Os parâmetros do modelo foram adotados com base na atividade realizada em aula: *taxa de aprendizado = 0.00005* e otimizador SGD. *Cross Entropy Loss* foi utilizada para calcular a perda de entropia cruzada entre a entrada e o alvo.
 
+> O primeiro treinamento consistiu em realizar 100 épocas para visualização do efeito overfitting. Os resultados das médias (10 iterações) das acurácias obtidas ao longo das 100 épocas durante o treinamento, sob os conjuntos de treinamento e validação podem ser visualizados na Figura 2. Por meio do gráfio **acurácias do treinamento e validação x época**, é possível observar que o overfitting ocorre a partir da 40ª época.
+
+> ![Figura 2](assets/acc-100epocas.png)
+
+> Figura 2 - Gráfico das médias das acurácias x épocas ao longo de 100 épocas.
+
+> O gráfico **loss de treinamento e validação x época** (Figura 3) exibe os resultados da função de perda em 100 épocas, sendo a média de 10 iterações. Nota-se que a partir da 40ª época, *loss* para de diminuir sob o conjunto de validação.
+
+> ![Figura 3](assets/loss-100epocas.png)
+
+> Figura 3 - Gráfico das médias de *loss* x épocas ao longo de 100 épocas.
+
+> A fim de mitigar o efeito do overfitting, foi realizado outro treinamento apenas com 40 épocas. As acurácias obtidas com o conjunto de treinamento e validação ao longo de 40 epócas podem ser observadas na Figura 4. E os resultados de *loss* podem ser visualizados no gráfico da Figura 5.
+
+> ![Figura 4](assets/acc-40epocas.png)
+
+> Figura 4 - Gráfico das médias das acurácias x épocas ao longo de 40 épocas.
+
+> ![Figura 5](assets/loss-40epocas.png)
+
+> Figura 5 - Gráfico das médias de *loss* x épocas ao longo de 40 épocas.
+
+Ao treinar o classificador por 40 épocas, o efeito de overfitting é mitigado e a função *loss* continua em queda, como pode-se observar no gráfico da Figura 5.
+
 > As métricas calculadas a partir dos resultados foram especificidade, sensibilidade, acurácia e matriz de confusão. Os testes foram realizados no conjunto de teste estabelecido e no conjunto de teste apresentado na atividade em aula para verificar como o modelo está atuando. Em seguida, foram realizadas as predições no conjunto SLE.
 
 * resultados do treinamento do classificador usando tabelas e gráficos
