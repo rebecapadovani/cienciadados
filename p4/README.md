@@ -87,7 +87,16 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 
 > ![predição-em](assets/em-2.png) ![predição-avc](assets/avc-2.png)
 
+> O classificador treinado também foi testado nos dados de teste apresentado em aula para atividade. Este conjunto possui 225 imagens. O resultado obtido pode ser visualizado na matriz de confusão da Tabela 2.
 
+> | Predição/Real | AVC | EM |
+> |--|--|--|
+> | AVC |  79 | 0 |
+> | EM |  0  |  146 |
+
+> Tabela 1 - Conjunto de teste da atividade - matriz de confusão. 
+
+Assim como o conjunto de teste apresentado anteriormente, a acurácia, especificidade e sensibilidade para este conjunto chegaram a 100%. neste sentido, é possível notar que o modelo consegue classificar as imagens de conjuntos não vistos antes e é razoável considerar que há generalização em seu aprendizado.
 
 # Resultados Obtidos e Discussão
 > Esta seção deve apresentar o resultado de predição das lesões de LES usando o classificador treinado. Também deve tentar explicar quais os atributos relevantes usados na classificação obtida
