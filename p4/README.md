@@ -44,6 +44,8 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 
 > Os dados foram dividos em aproximadamente 90% para o conjunto de treinamento e 10% para o conjunto de teste. O conjunto de validação correspode a aproximadamente 26% do conjunto de treinamento. Resultando em 507 imagens para treinamento, 182 para validação e 78 para teste.
 
+> Como proposto em atividade, foi realizada a aumentação de dados a fim de melhorar a acurácia apresentada pelo modelo. A técnica de *data augmentation* utilizou transformações, já citadas anteriormente, que não comprometessem as informações das imagens médicas [2]. 
+
 > Os parâmetros do modelo foram adotados com base na atividade realizada em aula: *taxa de aprendizado = 0.00005* e otimizador SGD. *Cross Entropy Loss* foi utilizada para calcular a perda de entropia cruzada entre a entrada e o alvo.
 
 > O primeiro treinamento consistiu em realizar 100 épocas para visualização do efeito overfitting. Os resultados das médias (10 iterações) das acurácias obtidas ao longo das 100 épocas durante o treinamento, sob os conjuntos de treinamento e validação podem ser visualizados na Figura 2. Por meio do gráfio **acurácias do treinamento e validação x época**, é possível observar que com os dados de treinamento, o classificador atinge 95% de acurácia média mas, com o os dados de validação, a métrica não passa de 90%. Nesse sentido, é notável que o overfitting ocorre a partir da 40ª época.
@@ -94,9 +96,9 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 > | AVC |  79 | 0 |
 > | EM |  0  |  146 |
 
-> Tabela 1 - Conjunto de teste da atividade - matriz de confusão. 
+> Tabela 2 - Conjunto de teste da atividade - matriz de confusão. 
 
-Assim como o conjunto de teste apresentado anteriormente, a acurácia, especificidade e sensibilidade para este conjunto chegaram a 100%. neste sentido, é possível notar que o modelo consegue classificar as imagens de conjuntos não vistos antes e é razoável considerar que há generalização em seu aprendizado.
+> Assim como o conjunto de teste apresentado anteriormente, a acurácia, especificidade e sensibilidade para este conjunto chegaram a 100%. Neste sentido, é possível notar que o modelo consegue classificar as imagens de conjuntos não vistos antes e é razoável considerar que há generalização em seu aprendizado.
 
 # Resultados Obtidos e Discussão
 > Esta seção deve apresentar o resultado de predição das lesões de LES usando o classificador treinado. Também deve tentar explicar quais os atributos relevantes usados na classificação obtida
@@ -104,14 +106,13 @@ Assim como o conjunto de teste apresentado anteriormente, a acurácia, especific
 > * tenha em mente que quem irá ler o relatório é uma equipe multidisciplinar. Descreva questões técnicas, mas também a intuição por trás delas.
 
 # Conclusão
-> Destacar as principais conclusões obtidas no desenvolvimento do projeto.
->
-> Destacar os principais desafios enfrentados.
->
-> Principais lições aprendidas.
->
-> Trabalhos Futuros:
+> Após as discussões e análises realizadas é possível concluir que o modelo treinado conseguiu resultados satisfatórios em classificar os dados que não tiveram contato com o classificador durante o treinamento. O modelo atingiu 100% de acurácia para os testes realizados e por isso, pode-se considerar que há generalização. A aumentação de dados possibilitou que o classificador aprendesse diversas formas de entender a entrada de imagens apresentadas para o problema de classificar lesões isquêmicas e desmielinizantes e também foi o principal fator para atingir a generalização obtida pelo modelo, tendo em vista que na atividade realizada em aula, o resultado da classificação foi comprometida por, entre outros possíveis motivos, não utilizar a aumentação de dados. 
+
+> O principal desafio encontrado foi a compreensão de quais atributos foram relevantes para a classificação das imagens, tendo em vista que o aprendizado profundo estabece esses atributos de forma a aplicar diversos filtros.
+
 > * o que poderia ser melhorado se houvesse mais tempo?
 
 # Referências Bibliográficas
 > [1] ImageNet . http://www.image-net.org
+
+> [2] HUSSAIN, Zeshan et al. Differential data augmentation techniques for medical imaging classification tasks. In: AMIA annual symposium proceedings. American Medical Informatics Association, 2017. p. 979. <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5977656/>
