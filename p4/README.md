@@ -41,8 +41,11 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 
 # Metodologia
 > Foi utilizado um classificador baseado em Deep Learning, a arquitetura ResNet-18. A ResNet-18 possui 18 camadas de profundidade. É possível carregar uma versão pré-treinada da rede treinada em mais de um milhão de imagens do banco de dados ImageNet [1]. A rede pré-treinada pode classificar imagens em 1000 categorias de objetos e muitos animais. Como resultado, a rede aprendeu representações ricas de recursos para uma ampla variedade de imagens. Por esse motivo, essa arquitetura foi escolhida neste trabalho. Foi utilizada a versão não pré-treinada desta rede. Uma camada NN linear foi adicionada à arquitetura com 2 neurônios de saída.
+
 > Os dados foram dividos em aproximadamente 90% para o conjunto de treinamento e 10% para o conjunto de teste. O conjunto de validação correspode a aproximadamente 26% do conjunto de treinamento. Resultando em 507 imagens para treinamento, 182 para validação e 78 para teste.
+
 > Os parâmetros do modelo foram adotados com base na atividade realizada em aula: *taxa de aprendizado = 0.00005* e otimizador SGD. *Cross Entropy Loss* foi utilizada para calcular a perda de entropia cruzada entre a entrada e o alvo.
+
 > As métricas calculadas a partir dos resultados foram especificidade, sensibilidade, acurácia e matriz de confusão. Os testes foram realizados no conjunto de teste estabelecido e no conjunto de teste apresentado na atividade em aula para verificar como o modelo está atuando. Em seguida, foram realizadas as predições no conjunto SLE.
 
 * resultados do treinamento do classificador usando tabelas e gráficos
@@ -66,7 +69,4 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 > * o que poderia ser melhorado se houvesse mais tempo?
 
 # Referências Bibliográficas
-> Lista de artigos, links e referências bibliográficas (se houver).
->
-> Fiquem à vontade para escolher o padrão de referenciamento preferido pelo grupo.
 > [1] ImageNet . http://www.image-net.org
