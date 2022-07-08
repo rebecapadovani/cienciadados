@@ -12,7 +12,7 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 
 # Introdução
 > O objetivo principal do projeto é diferenciar lesões isquêmicas e desmielinizantes por meio de um classificador e, assim, identificar qual a etiologia mais provável das lesões presentes em pacientes de Lúpus Eritematoso Sistêmico (SLE).
-> A etiologia da lesão é importante para o tratamento adequado e um método que distingue lesões desmielinizantes de isquêmicas e pode ser usado para caracterizar lesões de etiologia desconhecida. As estiologias são isquêmica e desmielinizante e as lesões da substância branca apresentam-se brilhante em T2w e FLAIR (hiperintensidades de substância branca).
+> A etiologia da lesão é importante para o tratamento adequado e um método que distingue lesões desmielinizantes de isquêmicas e pode ser usado para caracterizar lesões de etiologia desconhecida. As estiologias são "isquêmica" (AVC) ou "desmielinizante" (EM) e as lesões da substância branca apresentam-se brilhante em T2w e FLAIR (hiperintensidades de substância branca).
 
 ## Ferramentas
 > * Linguagem de programação Python;
@@ -101,16 +101,24 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 > Assim como o conjunto de teste apresentado anteriormente, a acurácia, especificidade e sensibilidade para este conjunto chegaram a 100%. Neste sentido, é possível notar que o modelo consegue classificar as imagens de conjuntos não vistos antes e é razoável considerar que há generalização em seu aprendizado.
 
 # Resultados Obtidos e Discussão
-> Esta seção deve apresentar o resultado de predição das lesões de LES usando o classificador treinado. Também deve tentar explicar quais os atributos relevantes usados na classificação obtida
-> * apresente os resultados de forma quantitativa e qualitativa
-> * tenha em mente que quem irá ler o relatório é uma equipe multidisciplinar. Descreva questões técnicas, mas também a intuição por trás delas.
+> O conjunto SLE possui 697 imagens de diferentes indivíduos. Para realizar as predições com o modelo treinado, foram desconsideras as máscaras. Os resultados obtidos pelo classificador são resumidos na Tabela 3.
+
+> | | AVC | EM |
+> |--|--|--|
+> | Quantidade de predições |  696 | 1 |
+ 
+> Tabela 3 - Qauntidade de predições obtidades para lesões "isquêmica" (AVC) ou "desmielinizante" (EM).
+
+> Ao abservar a tabela, é possível notar que o modelo treinado identificou que a etiologia mais provável das lesões presentes em pacientes de Lúpus Eritematoso Sistêmico (SLE) é a isquêmica (AVC), tendo em vista que apenas uma imagem foi classificada como EM. A imagem classificada como EM é a imagem '610_FLAIR26'.
+
+
 
 # Conclusão
 > Após as discussões e análises realizadas é possível concluir que o modelo treinado conseguiu resultados satisfatórios em classificar os dados que não tiveram contato com o classificador durante o treinamento. O modelo atingiu 100% de acurácia para os testes realizados e por isso, pode-se considerar que há generalização. A aumentação de dados possibilitou que o classificador aprendesse diversas formas de entender a entrada de imagens apresentadas para o problema de classificar lesões isquêmicas e desmielinizantes e também foi o principal fator para atingir a generalização obtida pelo modelo, tendo em vista que na atividade realizada em aula, o resultado da classificação foi comprometida por, entre outros possíveis motivos, não utilizar a aumentação de dados. 
 
 > O principal desafio encontrado foi a compreensão de quais atributos foram relevantes para a classificação das imagens, tendo em vista que o aprendizado profundo estabece esses atributos de forma a aplicar diversos filtros.
 
-> * o que poderia ser melhorado se houvesse mais tempo?
+> Como trabalho futuro, ou com mais tempo para a entrega, surgiu o interesse de tentar explicar quais os atributos escolhidos pelos diversos filtors utilizados pelo modelo apresentado.
 
 # Referências Bibliográficas
 > [1] ImageNet . http://www.image-net.org
